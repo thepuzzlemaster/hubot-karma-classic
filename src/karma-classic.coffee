@@ -8,8 +8,8 @@
 #   None
 #
 # Commands:
-#   <thing>++ - give thing some karma
-#   <thing>-- - take away some of thing's karma
+#   <thing> ++ - give thing some karma
+#   <thing> -- - take away some of thing's karma
 #   hubot karma <thing> - check thing's karma (if <thing> is omitted, show the top 5)
 #   hubot karma empty <thing> - empty a thing's karma
 #   hubot karma best [n] - show the top n (default: 5)
@@ -81,7 +81,7 @@ module.exports = (robot) ->
   ###
   # Listen for "++" messages and increment
   ###
-  robot.hear /@?(\S+[^+\s])\+\+(\s|$)/, (msg) ->
+  robot.hear /@?(\S+[^+])\+\+(\s|$)/, (msg) ->
     subject = msg.match[1].toLowerCase()
     karma.increment subject
     msg.send "#{subject} #{karma.incrementResponse()} (Karma: #{karma.get(subject)})"
@@ -89,7 +89,7 @@ module.exports = (robot) ->
   ###
   # Listen for "--" messages and decrement
   ###
-  robot.hear /@?(\S+[^-\s])--(\s|$)/, (msg) ->
+  robot.hear /@?(\S+[^-])--(\s|$)/, (msg) ->
     subject = msg.match[1].toLowerCase()
     # avoid catching HTML comments
     unless subject[-2..] == "<!"
