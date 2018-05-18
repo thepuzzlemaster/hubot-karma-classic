@@ -1,4 +1,4 @@
-## hubot-karma-classic [![NPM version](https://badge.fury.io/js/hubot-karma-classic.png)](http://badge.fury.io/js/hubot-karma-classic)
+## hubot-karma-whitespace [![NPM version](https://badge.fury.io/js/hubot-karma-classic.png)](http://badge.fury.io/js/hubot-karma-classic)
 
 A [Hubot](https://github.com/github/hubot) plugin to track arbitrary karma.
 
@@ -22,8 +22,8 @@ repackaged in the new npm package style format.  Use as you will.
 
 ### Installation (new style):
 
-1. cd into your hubot dir, run `npm install --save hubot-karma-classic` (adds a dependency in package.json).
-2. Add `"hubot-karma-classic"` to your `external-scripts.json` file.
+1. cd into your hubot dir, run `npm install --save hubot-karma-whitespace` (adds a dependency in package.json).
+2. Add `"hubot-karma-whitespace"` to your `external-scripts.json` file.
 3. Restart Hubot.
 
 ### Installation (old style):
